@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spnaData {
+            display: flex;
+            gap: 20px;
+        }
+
+        span {
+            /* display: inline-block; */
+            font-size: 30px;
+            display: flex;
+            /* flex-direction: row; */
+            gap: 40px;
+        }
+
+        button {
+            padding: 4px 7px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product Data</h1>
+    <div class="main">
+        <img src="https://m.media-amazon.com/images/I/81-RN7td5vL.jpg" height="200px" width="200px" alt="">
+        <div class="spnaData">
+            <button id="decSpan">-</button><span id="quantity"></span><button id="incSpan">+</button>
+        </div>
+    </div>
+
+    <script>
+        let quantity = document.getElementById('quantity');
+
+        let incSpan = document.getElementById('incSpan');
+        quantity.innerHTML = 0;
+        function createCounter() {
+            let count = 0;
+            console.log('create counter calling');
+            return function increment() {
+                console.log('increment function');
+                count++;
+                quantity.innerHTML = count;
+                return count;
+            }
+
+        }
+        const showData = createCounter();
+        incSpan.addEventListener('click', showData)
+        // console.log(showData());
+        // incSpan.addEventListener('click',createCounter)
+
+
+
+        //normal way
+        // function counter(){
+        //     let count=0;
+        //     return function inner(){
+        //         console.log(count++);
+        //     }
+        // }
+        // const innerCalling=counter();
+
+        // incSpan.addEventListener('click',innerCalling)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+Online Shopping Cart:
+Create a program where users can add items to their shopping cart. Implement functionalities
+to calculate the total price of items added and provide discounts based on certain conditions using if-else statements.
+
+Event Scheduler:
+Develop an event scheduler where users can add events with their respective dates and times.
+Use objects to represent each event and implement a loop to display upcoming events in chronological order.
+
+Temperature Converter:
+Write a program that converts temperatures from Celsius to Fahrenheit and vice versa.
+Use if-else statements to determine the conversion based on user input and utilize objects to store temperature values.
+
+Student Grade Tracker:
+Design a system to track student grades for multiple subjects. Use objects to represent each
+student and their respective grades. Implement loops to calculate average grades and use if-else statements to determine their performance (e.g., pass or fail).
+
+Library Book Management:
+Create a library management system where users can add books, check their availability, and
+borrow them. Use objects to represent books and implement if-else statements to handle borrowing rules (e.g., maximum number of books a user can borrow).
+
+Music Playlist Shuffle:
+Develop a music playlist application that allows users to add songs and shuffle the playlist.
+Use objects to represent songs and implement loops to shuffle the playlist. Use if-else statements to handle user interactions (e.g., play, pause, skip).
+
+Bank Account Management:
+Build a program to manage bank accounts where users can deposit, withdraw, and check their balance.
+Use objects to represent bank accounts and implement if-else statements to handle transactions (e.g., overdraft protection).
+
+Quiz Game:
+Design a quiz game with multiple-choice questions. Use objects to represent questions and choices.
+Implement loops to display questions and if-else statements to check user answers.
+
+Travel Planner:
+Create a travel planner where users can input their destination and travel dates. Use objects to
+represent destinations and implement if-else statements to display travel recommendations based on weather conditions.
+
+Task Manager:
+Develop a task manager application where users can add, delete, and mark tasks as completed.
+Use objects to represent tasks and implement loops to display tasks. Utilize if-else statements to handle task status updates.

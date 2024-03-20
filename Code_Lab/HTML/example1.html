@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            transition: 3s;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .div1{
+            background-color: rgb(17, 87, 87);
+        }
+        .div2{
+            background-color: rgb(24, 121, 121);
+        }
+        .div3{
+            background-color: rgb(34, 161, 161);
+        }
+        .div4{
+            background-color: rgb(49, 230, 230);
+        }
+        :where(.div1,.div2,.div3,.div4):hover{
+            grid-template-rows: 2fr 2fr 2fr 2fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</div>
+</body>
+</html>

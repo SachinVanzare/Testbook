@@ -1,0 +1,58 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          .container {
+            width: 600px;
+            height: 600px;
+            background-color: brown;
+          }
+          .item {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(177, 177, 12);
+            animation-name: item;
+            animation-duration: 10s;
+          }
+          @keyframes item {
+            0% {
+              background-color: aqua;
+            }
+            15% {
+              background-color: blue;
+              transform: translate(500px, 0);
+            }
+            25% {
+              background-color: blue;
+              transform: translate(500px, 0);
+            }
+            40% {
+              background-color: green;
+              transform: translate(500px, 500px);
+            }
+            50% {
+              background-color: green;
+              transform: translate(500px, 500px);
+            }
+            65% {
+              background-color: grey;
+              transform: translate(0, 500px);
+            }
+            75% {
+              background-color: grey;
+              transform: translate(0, 500px);
+            }
+            100% {
+              background-color: blueviolet;
+            }
+          }
+        </style>
+        <title>Document</title>
+      </head>
+      <body>
+        <div class="container"><div class="item"></div></div>
+      </body>
+    </html>
+    

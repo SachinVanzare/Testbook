@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* .container{
+            display: flex;
+            height: 100px;
+        }
+        .d1{
+            background-color: red;
+            flex-grow: 1;
+        }
+        .d2{
+            background-color: blue;
+            flex-grow: 1;
+        }
+        .d3{
+            background-color: yellow;
+            flex-grow: 1;
+        }
+        .d4{
+            background-color: pink;
+            flex-grow: 3;
+        } */
+        /* Second Problem */
+        .main{
+            /* height: 50px; */
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 30px;
+            text-align: center;
+            /* flex-direction: column; */
+        }
+        .d5{
+            background-color: rgb(188, 184, 185);
+            padding: 10px;
+            flex: 50%;
+            /* flex-grow: 3; */
+        }
+        .d6{
+            background-color: rgb(92, 104, 238);
+            padding: 10px;
+            flex: 50%;
+            /* flex-grow: 3; */
+        }
+        @media (max-width: 700px) {
+            .d6,.d5 {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="d1">Red Div</div>
+        <div class="d2">Blue Div</div>
+        <div class="d3">Yellow Div</div>
+        <div class="d4">Pink Div</div>
+    </div> -->
+    <h1>Responsive Flexbox</h1>
+    <p>Different layouts for diffrerent screen sizes.</p>
+    <p><b>Browser Window</b></p>
+    <div class="main">
+        <div class="d5">1</div>
+        <div class="d6">2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events-1 in JS</h1>
+    <p id="demo"></p>
+    <div id="divdemo">Hover over me</div>
+    <section id="sectiondata">Section Data</section>
+    <button id="btn">Show</button>
+    <script>
+        let divdemo=document.getElementById('divdemo');
+        let pdemo=document.getElementById('demo');
+        let btn=document.getElementById('btn');
+        let sectiondata=document.getElementById('sectiondata')
+
+        btn.addEventListener('click',btnData);
+        divdemo.addEventListener('mouseover',hover);
+        function hover(){
+        divdemo.style.backgroundColor='green';
+
+        }
+        sectiondata.addEventListener('click',()=>{
+            sectiondata.style.border='5px solid blue';
+        })
+
+
+        function hoverout(){
+            divdemo.style.backgroundColor='pink'
+        }
+        function btnData(){
+            btn.style.backgroundColor='purple';
+            btn.style.border='3px solid pink';
+        }
+       
+    </script>
+</body>
+</html>

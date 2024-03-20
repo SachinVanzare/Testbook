@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="first" placeholder="Enter First Number"><br><br>
+    <input type="number" id="second" placeholder="Enter Second Number"><br><br>
+    <input type="number" id="guess" placeholder="Guess Your Answer"><br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Substraction</button>
+    <button onclick="add()">Multiplication</button>
+    <button onclick="add()">Division</button>
+    <div>
+        <p id="total"></p>
+    </div>
+    <script>
+        function add(){
+        let first=parseInt(document.getElementById('first').value);
+        let second=parseInt(document.getElementById('second').value);
+        let Guess=document.getElementById('guess');
+        
+        let total;
+        total=first+second;
+        document.getElementById('Guess').innerHTML=total;
+        console.log(total);
+        } 
+        function sub(){
+        let first=parseInt(document.getElementById('first').value);
+        let second=parseInt(document.getElementById('second').value);
+        let Guess=parseInt(document.getElementById('guess').value);
+        let total;
+        total=first-second;
+        document.getElementById('Guess').innerHTML=total;
+        console.log(total);
+        }
+    </script>
+</body>
+</html>

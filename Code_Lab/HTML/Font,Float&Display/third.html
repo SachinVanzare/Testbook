@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            display: contents;
+            border: 1px solid red;
+            background-color: rgb(151, 223, 239);
+            padding: 10px;
+            text-decoration: double;
+            width: 200px;
+        }
+        .b{
+            /* display: inline; */
+            border: 2px black solid;
+            background-color: rgb(181, 233, 84);
+            color:rgb(24, 5, 118);
+        }
+        .c{
+            display: inherit;
+            border: 2px black solid;
+            background-color: rgb(239, 123, 185);
+        }
+        .d{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: rgb(246, 193, 59);
+            border: 2px black solid;
+        }
+        .e{
+            display:none;
+            border: 2px black solid;
+            background-color: rgb(96, 244, 79);
+        }
+        .f{
+            display: inline-flex;
+            border: 2px black solid;
+            background-color: rgb(230, 246, 3);
+        }
+        .g{
+            display: run-in;
+            border: 2px black solid;
+            background-color: rgb(11, 224, 135);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The display Property</h1>
+    <h2>display: contents:</h2>
+    <div class="a">The display property specifies the display behavior (the type of rendering box) of an element.</div>
+    <p class="b">The display property is the most important CSS property for controlling layout.</p>
+    <p class="c">The display property specifies if/how an element is displayed.</p>
+    <p class="d">Every element has a default display value. However, you can override it</p>
+    <p class="e">Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.</p>
+    <p class="f">Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it.</p>
+    <p class="g">Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there</p>
+</body>
+</html>
